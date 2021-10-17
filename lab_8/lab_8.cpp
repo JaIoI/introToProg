@@ -5,15 +5,6 @@ int main()
 	SetConsoleCP(1251);// установка кодовой страницы win-cp 1251 в поток ввода
 	SetConsoleOutputCP(1251); // установка кодовой страницы win-cp 1251 в поток вывода
 
-	const int N_MISSIONS = 6;
-	string missions[N_MISSIONS] = {
-		"Градусы в радианы",
-		"Радианы в градусы",
-		"Конфеты",
-		"Автомобили",
-		"Линейное уравнение A*x + B = 0 (A != 0)",
-		"Система линейных уравнений A1*x + B1*y = C1, A2*x + B2*y = C2"
-	};
 
 	bool restart = false;
 	do {
@@ -21,10 +12,10 @@ int main()
 		// Вывод массива строк на экран
 		for (int i = 0; i < N_MISSIONS; i++)
 		{
-			short missionNum = i + 1;
-			cout << missionNum << ") " << missions[i] << endl;
+			cout << missions[i] << endl;
 		}
-		cout << "   Введите номер задачи: ";
+		cout << "____________________________________________________________\n";
+		cout << "   Введите номер задачи (0 - выход): ";
 
 		short choice;
 		cin >> choice;
@@ -38,8 +29,6 @@ int main()
 			mission_4();
 		if (choice == 5)
 			mission_5();
-		if (choice == 6)
-			mission_6();
 		if (choice == 0)
 			break;
 		restart = true;

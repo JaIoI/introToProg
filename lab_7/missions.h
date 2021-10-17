@@ -35,7 +35,7 @@ void mission_3()
 {
 	cout << "3) Известно, что X кг конфет стоит A рублей. \n";
 	cout << "   Определить, сколько стоит 1 кг и Y кг этих же конфет \n";
-	int weightX, weightY, price1, priceX, priceY;
+	double weightX, weightY, price1, priceX, priceY;
 	cout << "Вес конфет (кг): ";
 	cin >> weightX;
 	cout << "Стоимость " << weightX << " кг конфет (руб): ";
