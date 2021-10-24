@@ -95,9 +95,7 @@ void mission_5()
 	} while (year < 1);
 	if (year > 99)
 		res = year / 100 + 1;
-	if (year > 9)
-		res = year / 10 + 1;
-	else
+	if (year < 100)
 		res = 1;
 	cout << "   Результат: " << res << "-е столетие" << endl;
 
