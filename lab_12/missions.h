@@ -64,7 +64,7 @@ void mission_2() {
 	char command[10];
 	cout << "   Ââåäèòå êîìàíäó: ";
 	cin >> command;
-	if (command[0] == 'ñ' || command[0] == 'C') {
+	if (command[0] == 'ñ' || command[0] == 'Ñ') {
 		if (command[1] == '-' && command[2] == '1')
 			cout << "   Ø¸ë íà ÑÅÂÅÐ, ïîâåðíóë ÍÀÏÐÀÂÎ, èäó íà ÂÎÑÒÎÊ! \n";
 		if (command[1] == '1')
